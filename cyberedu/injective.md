@@ -1,3 +1,4 @@
+# injective
 
 The ctf gives you llm you can easily convince to give you the flag.
 

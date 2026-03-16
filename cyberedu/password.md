@@ -1,3 +1,4 @@
+# password
 
 So when I saw a .pyc file I send it to the uncompyle6 tool.
 > uncompyle6 chall.pyc > chall.py

@@ -1,3 +1,4 @@
+# inception
 
 Ok so in the zip file there is a picture of a cat.
 I tried cracking some steganografy form it but rockyou didn't find anything.

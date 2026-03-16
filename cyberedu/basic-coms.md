@@ -1,3 +1,4 @@
+# basic-coms
 
 So I had no idea what to do so I started running random commands.
 I found interesting the fact that there where some requests he was making to itself (127.0.0.1 to 127.0.0.1).
