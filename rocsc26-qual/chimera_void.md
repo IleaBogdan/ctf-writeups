@@ -1,7 +1,13 @@
+# chimera_void
+
 I did:
+```
 strings chimera_void.pcap | grep -E "^(G[0-9]|M[0-9]|T[0-9])" > extracted_commands.gcode
 grep -E "^(G[0-9]|M[0-9]|T[0-9]|;)" extracted_commands.gcode > clean_commands.gcode
+```
 
 then I went on: https://zupfe.velor.ca/
 and uploaded the clean_commands.gcode file
-and then I clicked randomly on the gcode commands untill I saw the flag getting highlighted in the middle
+and then I clicked randomly on the gcode commands untill I saw the flag getting highlighted in the middle.
+
+flag: `ctf{congrats_winners}`
