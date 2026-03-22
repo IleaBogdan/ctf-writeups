@@ -6,6 +6,6 @@ I got this offsets that leak the pointers: `i+9+1008//8` (i is a number between 
 After leaking everything we need to remove the XXXX chars from the leaks since they are there just to get in our way.
 
 exploit:
-[[notafuzz-exploit.py]]
+![notafuzz-exploit.py](notafuzz-exploit.py)
 
 flag: `ctf{fad65340180f6b4c6f49dad138daeed447cf23f994635481f92551f05dbc6070}`
