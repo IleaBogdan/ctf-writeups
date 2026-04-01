@@ -19,4 +19,7 @@ We open the png and inside it we have this:
 username admin password 7 03217838251474481E0D4D5144440A08532F7B732C666675465E425B0052080B040058051D44000000525302520F0C57550E53021702500C0A050A254A1650405542135B0D5037
 ```
 
+Then I used this website: https://ccnax.com/cisco-type-7-password-decryption/ 
+to decrypt the password since it is a cisco type 7 password or something like that.
+
 flag: `ECSC{5d0d4436ad7e07d5375948ad13746fe2987aa7fd7126dfdd47acedf89905a0a4}`
