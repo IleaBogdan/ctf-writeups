@@ -33,6 +33,7 @@ Looking at the request made by the hacker towards the server after he uploaded t
 
 flag q5: `4443`
 
+
 ## Memory Dump Aanlysis
 
 ##### Q6:
@@ -40,6 +41,8 @@ flag q5: `4443`
 flag q6: ``
 
 ##### Q7:
+By using volatility3 and looking at the pstree we can find the location where the malware saves itself: `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\updatenow.exe`
+The MITRE ATT&CK techinque is: ``
 
 flag q7: ``
 
@@ -54,3 +57,22 @@ Since the w3wp is used by an IIS we can asume the attacker used it to run comman
 We can get the PID to the left of where we got the name of the process.
 
 flag q8: `w3wp.exe, 4332`
+
+
+## Malware Sample Analysis
+
+##### Q9:
+Running checksec on the binary I see this:
+```sh
+$ checksec --file=./updatenow.exe
+Error: Not an ELF file: ./updatenow.exe: PE32 executable for MS Windows 5.01 (GUI), Intel i386, UPX compressed, 3 sections
+```
+From there I put GUI as the flag.
+
+flag q9: `UPX`
+
+##### Q10:
+Since I could not decompile the binary in ida to see what it does I looked it's sha on virus total. And in the behavior category I found SMTP Communications.
+It provided a link so that was probably the address the malware was connectiong to.
+
+flag q10: `cp8nl.hyperhost.ua`
