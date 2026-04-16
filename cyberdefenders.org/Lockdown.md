@@ -37,8 +37,9 @@ flag q5: `4443`
 ## Memory Dump Aanlysis
 
 ##### Q6:
+By running: `volatility3 -f memdump.mem windows.info` we get the kernel address.
 
-flag q6: ``
+flag q6: `0xf80079213000`
 
 ##### Q7:
 By using volatility3 and looking at the pstree we can find the location where the malware saves itself: `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\updatenow.exe`
