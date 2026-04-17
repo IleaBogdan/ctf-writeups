@@ -77,3 +77,8 @@ Since I could not decompile the binary in ida to see what it does I looked it's 
 It provided a link so that was probably the address the malware was connectiong to.
 
 flag q10: `cp8nl.hyperhost.ua`
+
+##### Q11:
+After some investigation on virustotal I found that the malware is a `Remote Access Trojan`. I also found that it is made in Ukraine. So searching this 2 on google at the same time I get: `AgentTesla`
+
+flag q11: `AgentTesla`
