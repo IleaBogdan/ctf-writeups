@@ -42,10 +42,14 @@ By running: `volatility3 -f memdump.mem windows.info` we get the kernel address.
 flag q6: `0xf80079213000`
 
 ##### Q7:
+```sh
+volatility3 -r pretty -f memdump.mem windows.pstree
+```
 By using volatility3 and looking at the pstree we can find the location where the malware saves itself: `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\updatenow.exe`
-The MITRE ATT&CK techinque is: ``
+So the program executes at startup.
+The MITRE ATT&CK techinque is: `T1547`
 
-flag q7: ``
+flag q7: `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\updatenow.exe, T1547`
 
 ##### Q8:
 For this one we can list the processes with: `volatility3 -f memdump.mem windows.pslist.PsList`
